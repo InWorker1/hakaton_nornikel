@@ -1,0 +1,91 @@
+# ─────────────────────────────────────────────────────────────
+# СЕКРЕТЫ — ВСЕГДА В НАЧАЛЕ, чтобы случайно не закоммитить
+# ─────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+**/*.env
+!.env.example
+
+# ─────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# ─────────────────────────────────────────────────────────────
+# IDE / editors
+# ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ─────────────────────────────────────────────────────────────
+# OS / проектные артефакты
+# ─────────────────────────────────────────────────────────────
+# Логи
+*.log
+logs/
+
+# Большие / скачиваемые данные хакатона (Я.Диск)
+data/raw/
+data/cache/
+
+# Neo4j local store (если поднимаем локально)
+neo4j/data/
+neo4j/logs/
+
+# Артефакты сборки презентации / видео
+*.pptx
+*.mp4
+*.mov
+artifacts/
+
+# Загруженные модели NLP
+models/
+*.bin
+*.safetensors
